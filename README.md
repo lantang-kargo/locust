@@ -5,14 +5,12 @@
 ## Quick Start
 
 ```bash
-docker build -t foo .
-
 docker run -it \
 -p 8089:8089 -p 9646:9646 \
 -v /your/locustfile/location:/mnt/locust \
 -e LOCUSTFILE_PATH=/mnt/locust/locustfile.py \
 -e TARGET_URL='https://foobar.com' \
-foo
+lstama/locust:latest
 ```
 ## Explanation
 
