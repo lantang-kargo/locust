@@ -14,6 +14,8 @@ lstama/locust:latest
 ```
 ## Explanation
 
+Add .env file in the /your/locustfile/location folder if you want to add some custom environment variables.
+
 localhost:8089 is the Locust Web UI address and localhost:9646/metrics is the Prometheus metrics endpoint.
 
 For more environment variable settings, visit [Locust documentation](https://docs.locust.io/en/stable/running-locust-docker.html) and [locust exporter readme](https://github.com/ContainerSolutions/locust_exporter).
