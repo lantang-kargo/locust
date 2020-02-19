@@ -3,6 +3,11 @@
 # turn on bash's job control
 set -m
 
+# source .env if exist
+if [ -f /mnt/locust/.env ]; then
+   source /mnt/locust/.env
+fi
+
 # Start the primary process and put it in the background
 ./docker_start.sh &
 
